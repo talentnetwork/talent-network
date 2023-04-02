@@ -74,7 +74,7 @@ module.exports = {
 			},
 		},
 		boxShadow: {
-			btn: "1px 2px 12px rgba(0, 0, 0, 0.12)",
+			btn: "2px 5px 20px rgba(0, 0, 0, 0.16);",
 		},
 	},
 	plugins: [],

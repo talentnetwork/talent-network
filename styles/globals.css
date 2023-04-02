@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+input,
+textarea,
+select {
+  @apply focus:outline-none focus-visible:outline-none focus:placeholder:text-transparent;
+}
