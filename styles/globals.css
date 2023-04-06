@@ -44,3 +44,31 @@ select {
 .teams-slider  .swiper-button-disabled{
   opacity: 0.3 !important;
 }
+
+/* slider workes samples */
+.work-samples .swiper-slide{
+  width: 100%;
+  transition: .8s all;
+  align-items: center;
+}
+
+
+@media screen and (min-width:1024px) {
+  .work-samples .swiper-wrapper {
+      align-items: center;
+  }
+  .work-samples .swiper-slide{
+    width: 25%;
+  }
+
+  .work-samples .swiper-slide:nth-last-child(){
+    width: 100%;
+  }
+
+  .work-samples .swiper-slide-active{
+    width: 50%;
+  }
+}
+
+
+
