@@ -1,12 +1,13 @@
 import React from "react";
 import axios from "axios";
 import { useFormik } from "formik";
+import { validationSchema } from "@/helpers/formValid/FormValid";
+
+
 
 const ContractForm = () => {
   const onSubmit = async (values) => {
-    let token = `Bearer ${localStorage.getItem("token")}`;
-
-    addDoctor(values,token)
+    
   };
   const initialValues = {
     full_name:"",
@@ -18,11 +19,13 @@ const ContractForm = () => {
   const formik = useFormik({
     initialValues,
     onSubmit,
-    validationSchema:validationSchemaDoctor,
+    validationSchema:validationSchema,
     validateOnMount: true,
   });
   return (
-    <section className="mt-5 md:grid grid-cols-6 gap-4">
+    <form
+    onSubmit={formik.handleSubmit}
+    className="mt-5 md:grid grid-cols-6 gap-4">
       <div className="md:col-span-2">
         <span className="bg-primary-400 text-white p-2  rounded">
           Contract Form
@@ -43,6 +46,9 @@ const ContractForm = () => {
               className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2 border-primary-400"
               type="text"
             />
+             {formik.errors.full_name && formik.touched.full_name && (
+          <div className="text-red-500">{formik.errors.full_name}</div>
+        )}
           </div>
           <div className="md:ml-[65px]">
             <label className="block mt-5 md:mt-0 ">Email</label>
@@ -52,6 +58,9 @@ const ContractForm = () => {
               className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
               type="text"
             />
+             {formik.errors.email && formik.touched.email && (
+          <div className="text-red-500">{formik.errors.email}</div>
+        )}
           </div>
         </div>
         <label className="block mt-5">Subject</label>
@@ -61,6 +70,9 @@ const ContractForm = () => {
           className="w-[320px] h-[48px] md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
           type="text"
         />
+         {formik.errors.subject && formik.touched.subject && (
+          <div className="text-red-500">{formik.errors.subject}</div>
+        )}
         <label className="block mt-5">Explanes</label>
         <textarea
          name="description"
@@ -68,8 +80,19 @@ const ContractForm = () => {
           className="w-[320px] h-[200px] resize-none md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
           type="text"
         />
+         {formik.errors.description && formik.touched.description && (
+          <div className="text-red-500">{formik.errors.description}</div>
+        )}
       </div>
-    </section>
+      <div className="flex justify-center mt-10 mb-5 ">
+          <button
+          type="submit"
+          className="flex  "
+          >
+            Submit
+          </button>
+      </div>
+    </form>
   );
 };
 
