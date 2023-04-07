@@ -1,13 +1,14 @@
 import React from "react";
 import axios from "axios";
-import { useFormik } from "formik";
+
 import { validationSchema } from "@/helpers/formValid/FormValid";
+import { useFormik } from "formik";
 
 
 
 const ContractForm = () => {
   const onSubmit = async (values) => {
-    
+    console.log(values);
   };
   const initialValues = {
     full_name:"",
@@ -83,14 +84,16 @@ const ContractForm = () => {
          {formik.errors.description && formik.touched.description && (
           <div className="text-red-500">{formik.errors.description}</div>
         )}
-      </div>
-      <div className="flex justify-center mt-10 mb-5 ">
-          <button
-          type="submit"
-          className="flex  "
-          >
-            Submit
-          </button>
+
+        <div className="flex justify-center mt-5 mb-5 md:justify-start ">
+            <button
+            type="submit"
+            className="flex  bg-primary-400 text-white p-2  rounded"
+            >
+              Submit
+            </button>
+        </div>
+
       </div>
     </form>
   );

@@ -3,6 +3,7 @@ import {Poppins} from "next/font/google";
 import ContractForm from "@/components/ContractForm";
 import OurTeam from "@/components/OurTeam";
 import WorkSamples from "@/components/WorkSamples";
+import OurServices from "@/components/servicesSction/OurServices";
 
 export const popnis = Poppins({
   subsets: ['latin'],
@@ -29,9 +30,10 @@ export async function getServerSideProps() {
 export default  function Home({ourTeam , workSamples}) {
   
   return (<div className={`${popnis.className}`}>
+    <div className="container mx-auto">
     <OurTeam  ourTeam={ourTeam} />
     <WorkSamples workSamples={workSamples} />
-    <div className="container mx-auto">
+   
       <ContractForm/>
     </div>
   </div>);

@@ -4,16 +4,16 @@ export const validationSchema = Yup.object({
 
    
     full_name: Yup.string()
-    .required("نام و نام خانوادگی الزامی می باشد"),
+    .required("Name required"),
     
     email: Yup.string()
-    .required("ایمیل الزامی می باشد")
-    .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "ایمیل معتبر وارد کنید"),
+    .required(" email required ")
+    .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, " Invalid Email"),
     description: Yup.string()
-    .required("نام و نام خانوادگی الزامی می باشد"),
+    .required("Explanes required" ),
    
     subject: Yup.string()
-    .required("نام و نام خانوادگی الزامی می باشد")
+    .required("subject required")
    
   
 });
