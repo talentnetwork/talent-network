@@ -9,7 +9,7 @@ export const popnis = Poppins({
 
 export default function Layout({ children }) {
   return (
-    <div className={`${popnis.className}`}>
+    <div className={`${popnis.className} dark:bg-bgDark-400`}>
       <Navbar />
       <main>{children}</main>
       <Footer />

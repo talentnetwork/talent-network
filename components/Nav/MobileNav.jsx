@@ -13,7 +13,7 @@ const MobileNav = () => {
         />
       </div>
       <div>
-        <PrimaryBtn />
+        <PrimaryBtn text='contract' />
       </div>
     </div>
   );

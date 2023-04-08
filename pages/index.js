@@ -31,7 +31,7 @@ export default function Home({ ourTeam, workSamples }) {
     <div className={`${popnis.className}`}>
       <OurTeam ourTeam={ourTeam} />
       <WorkSamples workSamples={workSamples} />
-      <div className='container mx-auto'>{/* <ContractForm/> */}</div>
+      <div className='container mx-auto'>{/* <ContractForm /> */}</div>
     </div>
   );
 }
