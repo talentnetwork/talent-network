@@ -4,6 +4,7 @@ import ContractForm from "@/components/ContractForm";
 import OurTeam from "@/components/OurTeam";
 import WorkSamples from "@/components/WorkSamples";
 import OurServices from "@/components/servicesSction/OurServices";
+import Services from "@/components/servicesSction/Services";
 
 export const popnis = Poppins({
   subsets: ['latin'],
@@ -33,7 +34,7 @@ export default  function Home({ourTeam , workSamples}) {
     <div className="container mx-auto">
     <OurTeam  ourTeam={ourTeam} />
     <WorkSamples workSamples={workSamples} />
-   
+    <Services/>
       <ContractForm/>
     </div>
   </div>);
