@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import {Swiper,SwiperSlide} from "swiper/react";
-import 'swiper/css';
+import {Swiper,SwiperSlide} from "@abasb75/swiperjs/react";
+import '@abasb75/swiperjs/css';
 
-import { Navigation  } from 'swiper';
+import { Navigation  } from '@abasb75/swiperjs';
 import Slide from "./slide";
 import Title from "../general/title";
 
@@ -37,7 +37,7 @@ function Slider({ourTeam}){
                                         }}
                                         >
                                         {ourTeam.content.map((person,index)=><SwiperSlide key={index}><Slide person={person} className="w-[18.14%] h-full" /></SwiperSlide>)}
-                                        {ourTeam.content.map((person,index)=><SwiperSlide key={index}><Slide person={person} className="w-[18.14%] h-full" /></SwiperSlide>)}
+                                        
                                     </Swiper>
                                 </div>
                             </div>
