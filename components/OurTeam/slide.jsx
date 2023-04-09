@@ -18,6 +18,7 @@ import Image from "next/image";
 
 export default function Slide({person}){
     return (<div data="slider slide" className="px-2 lg:px-4 py-2 lg:py-4 h-full w-full">
+        
         <div className="bg-white w-full h-full rounded-2xl shadow-[3px_6px_10px_rgba(0,0,0,0.12)]">
             <div className="w-full flex flex-col justify-center justify-items-center h-full">
                 <div className="w-full ">
