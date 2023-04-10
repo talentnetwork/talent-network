@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { BsInstagram } from "react-icons/bs";
+import { IoIosCall } from "react-icons/io";
+import { CgMail } from "react-icons/cg";
+import { TbBrandTelegram } from "react-icons/tb";
+import { SlSocialLinkedin } from "react-icons/sl";
 const Footer = () => {
   return (
     <div>
@@ -31,44 +35,14 @@ const Footer = () => {
           ></path>
         </svg>
       </div>
-      <div className='bg-bgLight-400 dark:text-typoDark-200 dark:stroke-typoDark-200 dark:bg-bgDark-50 w-full h-44 md:h-40'>
+      <div className='bg-bgLight-400 dark:text-typoDark-200 dark:stroke-typoDark-200 dark:bg-bgDark-50 w-full h-60 md:h-40'>
         <div className=' flex justify-between flex-col md:flex-row items-center container h-full p-6  md:p-0'>
           <div className='flex items-center justify-between'>
-            <Image
-              className='mx-4'
-              src={"/icons/call.svg"}
-              width={40}
-              height={40}
-              alt={"arrow bottom icon"}
-            />
-            <Image
-              className='mx-4'
-              src={"/icons/gmail.svg"}
-              width={40}
-              height={40}
-              alt={"arrow bottom icon"}
-            />
-            <Image
-              className='mx-4'
-              src={"/icons/telegram.svg"}
-              width={40}
-              height={40}
-              alt={"arrow bottom icon"}
-            />
-            <Image
-              className='mx-4'
-              src={"/icons/linkedln.svg"}
-              width={40}
-              height={40}
-              alt={"arrow bottom icon"}
-            />
-            <Image
-              className='mx-4'
-              src={"/icons/instagram.svg"}
-              width={40}
-              height={40}
-              alt={"arrow bottom icon"}
-            />
+            <IoIosCall className=' px-4 font-normal' size={80} />
+            <CgMail className='px-4 font-normal' size={80} />
+            <TbBrandTelegram className=' px-4 font-normal' size={80} />
+            <SlSocialLinkedin className=' px-4 font-normal' size={80} />
+            <BsInstagram className=' px-4 font-normal' size={80} />
           </div>
           <Link href='#nav'>
             <button className='w-12 h-12 rounded-lg bg-primary-400 p-2  md:mt-16 mt-0'>

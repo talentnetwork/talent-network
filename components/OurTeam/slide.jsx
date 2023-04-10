@@ -16,6 +16,7 @@ import Image from "next/image";
 
     */
 
+
 export default function Slide({person}){
     return (<div data="slider slide" className="px-2 lg:px-4 py-2 lg:py-4 h-full w-full">
         
@@ -33,8 +34,13 @@ export default function Slide({person}){
                         <a href={person.linkedin} ><div className="w-6 lg:w-7 h-6 lg:h-7 relative"><i className="icon-linkedin leading-6 lg:leading-7 w-full h-full text-center block text-2xl text-typoLight-200 dark:text-typoDark-400 hover:text-primary-400 transition" ></i></div></a>
                     </div>
                     
+
                 </div>
+              </a>
             </div>
+          </div>
         </div>
-    </div>);
+      </div>
+    </div>
+  );
 }

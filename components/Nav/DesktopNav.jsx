@@ -9,7 +9,7 @@ const DesktopNav = () => {
       <div>
         <Image alt="logo-header" src='/images/logo-header 1.svg' width={100} height={100} />
       </div>
-      <div className=''>
+      <div className='flex justify-center items-center'>
         {["home", "our team", "services"].map((name, index) => (
           <Link
             key={index}
