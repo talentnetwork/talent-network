@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <path
             fill='#FFBA52'
-            fill-opacity='1'
+            fillOpacity='1'
             d='M0,288L1440,320L1440,320L0,320Z'
           ></path>
         </svg>
@@ -30,7 +30,7 @@ const Footer = () => {
         >
           <path
             fill='#FFBA52'
-            fill-opacity='1'
+            fillOpacity='1'
             d='M0,128L1440,320L1440,320L0,320Z'
           ></path>
         </svg>

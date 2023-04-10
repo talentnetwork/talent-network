@@ -12,15 +12,15 @@ function Slider({ourTeam}){
     if(!ourTeam || !ourTeam.content){
         return <></>
     }else{
-        return (<div data="slider" className="w-full mx-auto teams-slider">
-            <div className="bg-secondary-400 rounded-3xl w-full relative pt-[320px] md:pt-[440px] lg:pt-[510px] 2xl:pt-[40%]">
+        return (<div data="slider" className="w-full mx-auto teams-slider  ">
+            <div className="bg-secondary-400 rounded-3xl w-full relative pt-[320px] md:pt-[440px] lg:pt-[510px] 2xl:pt-[40%] dark:bg-bgDark-50">
                 <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center justify-items-center">
                     <div className="w-full ">
                         <header className="w-full px-4 md:px-6 2xl:px-10 flex pb-2 md:pb-4 lg:pb-10 justify-between">
                             <Title>Our team</Title>
                             <div data="slider-controller" className="pr-1 lg:pr-10">
-                                <button className="w-7 md:w-10 h-7 md:h-10 team-slider-prev"><div className="relative w-full h-full"><Image src={'/icons/slider-prev.svg'} fill alt={'slider prev icon'} /></div></button>
-                                <button className="w-7 md:w-10 h-7 md:h-10 team-slider-next"><div className="relative w-full h-full"><Image src={'/icons/slider-next.svg'} fill alt={'slider next icon'} /></div></button>
+                                <button className="w-7 md:w-10 h-7 md:h-10 team-slider-prev"><div className="relative w-full h-full"><i className="icon-slider-prev text-4xl"></i></div></button>
+                                <button className="w-7 md:w-10 h-7 md:h-10 team-slider-next"><div className="relative w-full h-full"><i className="icon-slider-next text-4xl"></i></div></button>
                             </div>
                         </header>
                         <div data="slider container" className="w-full pt-[260px] md:pt-[320px] lg:pt-[380px] 2xl:pt-[27.14%] relative ">

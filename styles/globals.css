@@ -67,9 +67,11 @@ select {
 .work-samples .swiper-slide {
   width: 100%;
 
+
   transition: 0.8s all;
 
   align-items: center;
+  display: flex;
 }
 
 @media screen and (min-width: 1024px) {
@@ -83,6 +85,7 @@ select {
     animation-name: slideout;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
+
   }
   .work-samples .swiper-slide {
     width: 25%;
@@ -97,6 +100,7 @@ select {
     animation-name: slidein;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
+
   }
   .work-samples .swiper-slide-active {
     width: 50%;

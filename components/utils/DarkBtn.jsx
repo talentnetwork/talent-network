@@ -23,9 +23,9 @@ const DarkModeButton = () => {
               <path
                 d='M1.3834 18.7C1.9834 27.2833 9.26673 34.2667 17.9834 34.65C24.1334 34.9167 29.6334 32.05 32.9334 27.5333C34.3001 25.6833 33.5667 24.45 31.2834 24.8667C30.1667 25.0667 29.0167 25.15 27.8167 25.1C19.6667 24.7667 13.0001 17.95 12.9667 9.9C12.9501 7.73333 13.4001 5.68333 14.2167 3.81666C15.1167 1.75 14.0334 0.766663 11.9501 1.65C5.35007 4.43333 0.833402 11.0833 1.3834 18.7Z'
                 stroke='#3E3E3E'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
               />
             </svg>
             <svg
@@ -39,8 +39,8 @@ const DarkModeButton = () => {
               <path
                 d='M17.9999 1.33331V2.99998M17.9999 33V34.6667M29.785 6.21488L28.6065 7.39339M7.39333 28.6066L6.21482 29.7851M34.6666 18H32.9999M2.99992 18H1.33325M29.785 29.7851L28.6065 28.6066M7.39333 7.39339L6.21482 6.21488M27.9999 18C27.9999 23.5228 23.5228 28 17.9999 28C12.4771 28 7.99992 23.5228 7.99992 18C7.99992 12.4771 12.4771 7.99998 17.9999 7.99998C23.5228 7.99998 27.9999 12.4771 27.9999 18Z'
                 stroke='#F6F6F6'
-                stroke-width='1.5'
-                stroke-linecap='round'
+                strokeWidth='1.5'
+                strokeLinecap='round'
               />
             </svg>
           </div>
@@ -64,9 +64,9 @@ const DarkModeButton = () => {
                   width='60'
                   height='60'
                   filterUnits='userSpaceOnUse'
-                  color-interpolation-filters='sRGB'
+                  colorInterpolationFilters='sRGB'
                 >
-                  <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                  <feFlood floodOpacity='0' result='BackgroundImageFix' />
                   <feColorMatrix
                     in='SourceAlpha'
                     type='matrix'
@@ -113,9 +113,9 @@ const DarkModeButton = () => {
                   width='60'
                   height='60'
                   filterUnits='userSpaceOnUse'
-                  color-interpolation-filters='sRGB'
+                  colorInterpolationFilters='sRGB'
                 >
-                  <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                  <feFlood floodOpacity='0' result='BackgroundImageFix' />
                   <feColorMatrix
                     in='SourceAlpha'
                     type='matrix'

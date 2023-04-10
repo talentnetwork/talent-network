@@ -53,8 +53,9 @@ function WorkSamples({workSamples}){
             </div>                  
             <Intro title={'about'} text={workSamples.content[selectedIndex].about} />
             <Intro title={'tecnology'} text={workSamples.content[selectedIndex].technology} />
-            <div className="position-relative pb-8 mt-[64px]">
-                <Swiper
+            <div className="position-relative pb-8 mt-[64px] h-[30vw]">
+                <div className="w-full h-full inline ">
+                    <Swiper
                     
                     modules={[Navigation]}
                     spaceBetween={0}
@@ -80,32 +81,34 @@ function WorkSamples({workSamples}){
                     >
                         {workSamples.content.map((work,index)=>{
                             return (<SwiperSlide key={index}>
-                                <div className="w-full p-3 cursor-pointer" onClick={()=>{}}>
-                                    <div className="relative pt-[50%] w-full shadow-[2px_6px_12px_rgba(0,0,0,0.16)] rounded-lg overflow-hidden ">
-                                        <Image src={work.work_img!=='img'?work.work_img:'/images/default-work-samples.png'} alt={work.title} fill />
+                                <div className="w-full p-3 cursor-pointer flex" onClick={()=>{}}>
+                                    <div className="relative pt-[50%] w-full shadow-[2px_6px_12px_rgba(0,0,0,0.16)] rounded-lg overflow-hidden align-middle">
+                                        <Image src={work.work_img!=='img'?work.work_img[0]:'/images/default-work-samples.png'} alt={work.title} fill />
                                     </div>
                                 </div>
                             </SwiperSlide>);
                         })}
                     </Swiper>
+                </div>
+                
                     <button ref={prevBtn} className="hidden">prev</button>
                     <button ref={nextBtn} className="hidden">next</button>
                 </div>
                         
                 <div className="flex justify-center mt-8 ">
                         
-                    <button onClick={()=>goToPrevSlide()} className=" w-7 md:w-10 h-7 md:h-10 "><div className="relative w-full h-full"><Image src={'/icons/slider-prev.svg'} fill alt={'slider prev icon'} /></div></button>
+                    <button onClick={()=>goToPrevSlide()} className=" w-7 md:w-10 h-7 md:h-10 "><div className="relative w-full h-full"><i className="icon-slider-prev text-4xl"></i></div></button>
                     <ul className="flex gap-2  transition-[3s_all] h-7 md:h-10 items-center">
                         {workSamples.content.map((work,index)=>{
                             return (<li 
                                 key={index} 
                                 onClick={ ()=>goSlide(index) }
                                 className={`buttet ${
-                                index===selectedIndex?'w-12 bg-primary-400':'w-3 bg-primary-200'
+                                index===selectedIndex?'w-12 bg-primary-400 dark:bg-secondary-600':'w-3 bg-primary-200 dark:bg-secondary-400'
                                 } h-3 rounded-full  cursor-pointer `}></li>);
                          })}
                     </ul>
-                    <button onClick={()=>goToNextSlide()} className="w-7 md:w-10 h-7 md:h-10 "><div className="relative w-full h-full"><Image src={'/icons/slider-next.svg'} fill alt={'slider next icon'} /></div></button>
+                    <button onClick={()=>goToNextSlide()} className="w-7 md:w-10 h-7 md:h-10 "><div className="relative w-full h-full"><i className="icon-slider-next text-4xl"></i></div></button>
                     
                 </div>
         </main>

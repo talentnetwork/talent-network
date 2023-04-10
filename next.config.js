@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
   images: {
     domains: ["api.talentnetwork.ir"],
   },
@@ -15,5 +16,9 @@ const nextConfig = {
     ],
   },
 };
+
+
+}
+
 
 module.exports = nextConfig;
