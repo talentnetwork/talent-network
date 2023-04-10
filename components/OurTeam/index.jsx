@@ -2,6 +2,7 @@ import Image from "next/image";
 import Slider from "./slider";
 
 export default function OurTeam({ourTeam}){
+    console.log(ourTeam)
     return (<div data="our team section" className="w-full pt-4 pb-[120px] lg:container relative">
         <div className="bottom-8 left-[100px] absolute">
             <Image src={'/images/bg-shape-1.svg'} width={22} height={23} alt={'bg-shape'} />
