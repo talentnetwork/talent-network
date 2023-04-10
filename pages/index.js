@@ -5,6 +5,7 @@ import OurTeam from "@/components/OurTeam";
 import WorkSamples from "@/components/WorkSamples";
 import OurServices from "@/components/servicesSction/OurServices";
 import Services from "@/components/servicesSction/Services";
+import Hero from "@/components/Hero/Hero";
 
 export const popnis = Poppins({
   subsets: ["latin"],
@@ -28,17 +29,16 @@ export async function getServerSideProps() {
   }
 }
 
-
-export default  function Home({ourTeam , workSamples}) {
-  
-  return (<div className={`${popnis.className}`}>
-    <div className="container mx-auto">
-    <OurTeam  ourTeam={ourTeam} />
-    <WorkSamples workSamples={workSamples} />
-    <Services/>
-      <ContractForm/>
-
-    </div>
+export default function Home({ ourTeam, workSamples }) {
+  return (
+    <div className={`${popnis.className}`}>
+      <Hero />
+      <div className='container  mx-auto'>
+        <OurTeam ourTeam={ourTeam} />
+        <WorkSamples workSamples={workSamples} />
+        <Services />
+        <ContractForm />
+      </div>
     </div>
   );
 }
