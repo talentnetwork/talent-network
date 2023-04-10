@@ -24,8 +24,6 @@
 }
 
 
-*{
-=======
 * {
 
   font-size: 1rem;
@@ -72,7 +70,6 @@ select {
 .work-samples .swiper-slide {
   width: 100%;
 
-=======
   transition: 0.8s all;
 
   align-items: center;
@@ -89,11 +86,6 @@ select {
     animation-name: slideout;
     animation-duration: .5s;
     animation-iteration-count: 1;
-    
-=======
-  .work-samples .swiper-slide {
-    width: 25%;
-
   }
 
   .work-samples .swiper-slide:nth-last-child() {
@@ -106,10 +98,6 @@ select {
     animation-name: slidein;
     animation-duration: .5s;
     animation-iteration-count: 1;
-=======
-  .work-samples .swiper-slide-active {
-    width: 50%;
-
   }
 
 }
