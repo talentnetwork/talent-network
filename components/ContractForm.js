@@ -38,7 +38,7 @@ const ContractForm = () => {
       className="mt-5 md:grid grid-cols-6  gap-4"
     >
       <div className="md:col-span-2">
-        <span className="bg-primary-400 text-white p-2  rounded">
+        <span className="bg-primary-400 text-white p-2  rounded  dark:bg-secondary-400 dark:text-black">
           Contract Form
         </span>
         <p className="mt-5 w-[318px] md:w-auto ">
@@ -100,7 +100,7 @@ const ContractForm = () => {
         <div className="flex justify-center mt-5 mb-5 md:justify-start ">
           <button
             type="submit"
-            className="flex  bg-primary-400 text-white p-2  rounded"
+            className="flex  bg-primary-400 text-white p-2  rounded dark:bg-primary-50 dark:text-black"
           >
             Submit
           </button>

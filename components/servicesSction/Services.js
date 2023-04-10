@@ -43,13 +43,13 @@ const Services = () => {
     <div>
       <div className="mt-16 block  md:mt-10 md:grid grid-cols-7 gap-4">
         <div className="md:col-span-3">
-              <span className="bg-primary-400 text-white p-2  rounded">
+              <span className="bg-primary-400 text-white p-2  rounded dark:bg-secondary-400 dark:text-black">
                 Services
               </span>
               <p className="mt-16 mb-10 w-[318px] md:w-auto ">
               We are here to provide services in the field of website design such as: front-end development, back-end development and user interface design. The Talent Network team from zero to one hundred sets up dedicated sites with laravel, nextjs, and reactjs technologies with a dedicated user interface design. Click for more information.
               </p>
-              <span className="bg-primary-400 text-white p-2   rounded">
+              <span className="bg-primary-400 text-white p-2   rounded dark:bg-primary-50 dark:text-black dark:shadow-lg">
               View portfolio
               </span>
         </div>

@@ -5,7 +5,7 @@ export default function OurTeam({ ourTeam }) {
   return (
     <div
       data='our team section'
-      className='w-full pt-4 pb-[120px] lg:container relative'
+      className='w-full mt-24 pt-4 pb-[120px] lg:container relative'
     >
       <div className='bottom-8 left-[100px] absolute'>
         <Image
