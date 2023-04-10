@@ -41,7 +41,7 @@ const services = [
 const Services = () => {
   return (
     <div>
-      <div className="mt-16 md:mt-10 grid grid-cols-7 gap-4">
+      <div className="mt-16 block  md:mt-10 md:grid grid-cols-7 gap-4">
         <div className="md:col-span-3">
               <span className="bg-primary-400 text-white p-2  rounded">
                 Services
@@ -53,7 +53,7 @@ const Services = () => {
               View portfolio
               </span>
         </div>
-        <div className="mt-16 md:mt-10 col-span-4 md:ml-16">
+        <div  className="mt-16 md:mt-10 col-span-4 md:ml-16">
           {services.map((service, index) => (
             <OurServices key={index} info={service} />
           ))}

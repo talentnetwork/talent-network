@@ -107,7 +107,7 @@ const ContractForm = () => {
         </div>
       </div>
     </form>
-    <div className={hide?"hidden":"relative left-[25rem] bottom-80 text-white"}>
+    <div className={hide?"hidden":"relative left-[25rem] bottom-80 text-white "}>
           <FormModal/>
         </div>
     </>
