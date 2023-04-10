@@ -73,6 +73,7 @@ select {
   transition: 0.8s all;
 
   align-items: center;
+  display: flex;
 }
 
 @media screen and (min-width: 1024px) {
