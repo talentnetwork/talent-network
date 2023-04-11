@@ -18,7 +18,7 @@ const DesktopNav = () => {
         {["home", "our team", "services"].map((name, index) => (
           <Link
             key={index}
-            href='#'
+            href={`#${name}`}
             className={`text-lg font-medium leading-7 mx-9 pb-2 hover:border-b-4 border-[#4C52EA] transition-all duration-75`}
           >
             {name}

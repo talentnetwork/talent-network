@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 import { IoIosCall } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
 import { TbBrandTelegram } from "react-icons/tb";
-import { SlSocialLinkedin } from "react-icons/sl";
+import { TiSocialLinkedin } from "react-icons/ti";
 const Footer = () => {
   return (
     <div>
@@ -38,11 +38,11 @@ const Footer = () => {
       <div className='bg-bgLight-400 dark:text-typoDark-200 dark:stroke-typoDark-200 dark:bg-bgDark-50 w-full h-60 md:h-40'>
         <div className=' flex justify-between flex-col md:flex-row items-center container h-full p-6  md:p-0'>
           <div className='flex items-center justify-between'>
-            <IoIosCall className=' px-4 font-normal' size={80} />
-            <CgMail className='px-4 font-normal' size={80} />
-            <TbBrandTelegram className=' px-4 font-normal' size={80} />
-            <SlSocialLinkedin className=' px-4 font-normal' size={80} />
-            <BsInstagram className=' px-4 font-normal' size={80} />
+            <IoIosCall className=' px-4 font-normal' size={75} />
+            <CgMail className='px-4 font-normal' size={75} />
+            <TbBrandTelegram className=' px-4 font-normal' size={75} />
+            <TiSocialLinkedin className=' px-4 font-normal' size={75} />
+            <BsInstagram className=' px-4 font-normal' size={75} />
           </div>
           <Link href='#nav'>
             <button className='w-12 h-12 rounded-lg bg-primary-400 p-2  md:mt-16 mt-0'>

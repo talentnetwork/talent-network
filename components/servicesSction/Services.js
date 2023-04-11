@@ -5,36 +5,31 @@ const services = [
     img: "/images/seo.png",
     title: "Designing complex websites and seo",
     flag: false,
-    dis:
-      "In the form of SPA with the latest technologies along with optimization for Google along with support for PWA mode and SEO of your sites",
+    dis: "In the form of SPA with the latest technologies along with optimization for Google along with support for PWA mode and SEO of your sites",
   },
   {
     img: "/images/Preparation.png",
     title: "Preparation of your startup proposal",
     flag: true,
-    dis:
-      "A business plan is the foundation of a business; a way to think about the key elements of a business. Leave it to us.",
+    dis: "A business plan is the foundation of a business; a way to think about the key elements of a business. Leave it to us.",
   },
   {
     img: "/images/uiux.png",
     title: "UI / UX design for your startup",
     flag: false,
-    dis:
-      "Website and app design according to the latest trends with a convenient and pleasant user experience.",
+    dis: "Website and app design according to the latest trends with a convenient and pleasant user experience.",
   },
   {
     img: "/images/mobile.png",
     title: "Mobile app design for your business",
     flag: true,
-    dis:
-      "We design the most advanced apps according to your taste and business needs.",
+    dis: "We design the most advanced apps according to your taste and business needs.",
   },
   {
     img: "/images/wibsite.png",
     title: "Website design with WordPress",
     flag: false,
-    dis:
-      "Designing all kinds of sites with WordPress for your business.leave it to us.",
+    dis: "Designing all kinds of sites with WordPress for your business.leave it to us.",
   },
 ];
 
@@ -53,7 +48,7 @@ const Services = () => {
               View portfolio
               </span>
         </div>
-        <div  className="mt-16 md:mt-10 col-span-4 md:ml-16">
+        <div className='mt-16 md:mt-10 col-span-4 md:ml-16'>
           {services.map((service, index) => (
             <OurServices key={index} info={service} />
           ))}
@@ -64,4 +59,3 @@ const Services = () => {
 };
 
 export default Services;
-

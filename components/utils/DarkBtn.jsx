@@ -10,7 +10,7 @@ const DarkModeButton = () => {
   return (
     <>
       <label htmlFor='dark-btn'>
-        <div className='w-24 h-12 rounded-[100px] bg-white shadow-[1px_2px_12px_rgba(0,0,0,0.12)] dark:shadow-[1px_2px_12px_rgba(67,69,103,0.4)] dark:bg-bgDark-50 flex items-center px-1 cursor-pointer dark:flex-row-reverse transition-all duration-150'>
+        <div className='w-24 h-12 rounded-[100px] bg-white shadow-[1px_2px_12px_rgba(0,0,0,0.12)] dark:shadow-[1px_2px_12px_rgba(67,69,103,0.4)] dark:bg-bgDark-50 flex items-center px-1 cursor-pointer dark:flex-row-reverse transition-all duration-150 z-50'>
           <div>
             <svg
               className='dark:hidden'

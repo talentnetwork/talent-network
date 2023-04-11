@@ -5,7 +5,7 @@ import MobileHero from "./MobileHero";
 
 const Hero = () => {
   return (
-    <div className='h-screen'>
+    <div className='h-screen' id='home'>
       <div className='hidden lg:flex'>
         <DesktopHero />
       </div>
