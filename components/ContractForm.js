@@ -54,7 +54,7 @@ const ContractForm = () => {
             <input
               name="full_name"
               {...formik.getFieldProps("full_name")}
-              className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2 border-primary-400"
+              className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2 border-primary-400 dark:focus:bg-bgDark-50 dark:bg-bgDark-200"
               type="text"
             />
             {formik.errors.full_name && formik.touched.full_name && (
@@ -66,7 +66,7 @@ const ContractForm = () => {
             <input
               name="email"
               {...formik.getFieldProps("email")}
-              className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
+              className="w-[320px] h-[48px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400 dark:focus:bg-bgDark-50 dark:bg-bgDark-200"
               type="text"
             />
             {formik.errors.email && formik.touched.email && (
@@ -78,7 +78,7 @@ const ContractForm = () => {
         <input
           name="subject"
           {...formik.getFieldProps("subject")}
-          className="w-[320px] h-[48px] md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
+          className="w-[320px] h-[48px] md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400 dark:focus:bg-bgDark-50 dark:bg-bgDark-200"
           type="text"
         />
 
@@ -90,7 +90,7 @@ const ContractForm = () => {
         <textarea
           name="description"
           {...formik.getFieldProps("description")}
-          className="w-[320px] h-[200px] resize-none md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400"
+          className="w-[320px] h-[200px] resize-none md:w-[710px]  rounded-lg bg-bgLight-200 focus:bg-white focus:border-2  border-primary-400 dark:focus:bg-bgDark-50 dark:bg-bgDark-200"
           type="text"
         />
         {formik.errors.description && formik.touched.description && (
@@ -100,7 +100,7 @@ const ContractForm = () => {
         <div className="flex justify-center mt-5 mb-5 md:justify-start ">
           <button
             type="submit"
-            className="flex  bg-primary-400 text-white p-2  rounded dark:bg-primary-50 dark:text-black"
+            className="bg-primary-400 dark:bg-primary-50 rounded-lg w-28 md:w-32 h-12 text-typoDark-200 dark:text-typoLight-600 shadow-[1px_4px_16px_rgba(118,71,235,0.2)] dark:shadow-[2px_4px_16px_rgba(195,197,248,0.3)] leading-7 text-lg font-medium z-40"
           >
             Submit
           </button>

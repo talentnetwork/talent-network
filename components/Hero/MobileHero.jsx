@@ -20,7 +20,7 @@ const MobileHero = () => {
               <path
                 d='M349 49C326.751 31.7435 308.29 24.3717 257.867 12.3089C194.838 -2.76963 47.0831 -2.76963 1 12.3089'
                 stroke='#C3C5F8'
-                stroke-width='2'
+                strokeWidth='2'
               />
             </svg>
           </h1>
@@ -45,8 +45,8 @@ const MobileHero = () => {
         src={"/images/vecteezy_abstract-wavy-stri 2.svg"}
         fill
       />
-      <div className='absolute left-[170px] top-[273px] bg-[#FFC56F] blur-[50px] opacity-25 w-[400px] h-[400px] z-0'></div>
-      <div className='absolute left-[48px] top-[-67px] bg-[#C3C5F8] blur-[50px] opacity-20 w-[300px] h-[300px] z-0'></div>
+      {/* <div className='absolute left-[170px] top-[273px] bg-[#FFC56F] blur-[50px] opacity-25 w-[400px] h-[400px] z-0'></div>
+      <div className='absolute left-[48px] top-[-67px] bg-[#C3C5F8] blur-[50px] opacity-20 w-[300px] h-[300px] z-0'></div> */}
       {/*  */}
       <svg
         className='absolute left-28 top-56'

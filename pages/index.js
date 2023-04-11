@@ -31,7 +31,7 @@ export async function getServerSideProps() {
 
 export default function Home({ ourTeam, workSamples }) {
   return (
-    <div className={`${popnis.className}`}>
+    <div className={`${popnis.className} dark:bg-bgDark-400 `}>
       <Hero />
       <div className='container  mx-auto'>
         <OurTeam ourTeam={ourTeam} />
