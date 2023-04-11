@@ -4,6 +4,7 @@ import Slider from "./slider";
 export default function OurTeam({ ourTeam }) {
   return (
     <div
+      id='our team'
       data='our team section'
       className='w-full mt-24 pt-4 pb-[120px] lg:container relative'
     >
@@ -30,7 +31,7 @@ export default function OurTeam({ ourTeam }) {
         data='slider-container'
         className='w-full py-[59px] xl:py-12 px-2 md:px-5 lg:p-0 '
       >
-       <Slider ourTeam={ourTeam} />
+        <Slider ourTeam={ourTeam} />
       </div>
     </div>
   );
