@@ -36,7 +36,7 @@ const ContractForm = () => {
     <>
       <form
         onSubmit={formik.handleSubmit}
-        className="mt-5 md:grid grid-cols-6  gap-4"
+        className="mt-5 lg:grid grid-cols-6  gap-4"
       >
         <div className="md:col-span-2">
           <span className="bg-primary-400 text-white p-2  rounded  dark:bg-secondary-400 dark:text-black">
@@ -110,24 +110,24 @@ const ContractForm = () => {
       </form>
       <div
         className={
-          hide ? "hidden" : "relative left-[25rem] bottom-80 text-white "
+          hide ? "hidden" : "  text-white "
         }
       >
-        {/* <FormModal hide={hide}/> */}
+        
         <div
           className={
-               "bg-[#FFE8C5] p-8 w-[440px] h-[240px] rounded-[16px] dark:bg-[#33379C]"
+               "bg-[#FFE8C5] relative p-8 top-[-350px] w-[320px] h-[240px] rounded-[16px] dark:bg-[#33379C] md:w-[440px] md:left-[350px]"
           }
         >
-          <span className="ml-44 text-black  dark:text-white mt-[40px]">
+          <span className=" absolute top-0 left-[140px] text-black  dark:text-white mt-[40px] md:left-[190px]">
             <AiOutlineCheckCircle size={45} />
           </span>
-          <p className="ml-5 mb-10 mt-[28px] text-black dark:text-white">
+          <p className=" mb-10 mt-[68px] text-black  dark:text-white md:ml-5">
             The form has been submitted successfully
           </p>
           <span
             onClick={clickHandler}
-            className="bg-primary-400 cursor-pointer ml-36 m-32 text-white p-2  rounded dark:bg-primary-50 dark:text-black"
+            className="bg-primary-400 cursor-pointer  ml-24 text-white p-2  rounded dark:bg-primary-50 dark:text-black md:ml-36"
           >
             Confirm
           </span>
