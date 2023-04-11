@@ -7,7 +7,7 @@ const MobileHero = () => {
       {" "}
       <div className='flex flex-col  container '>
         <div className='h-80 flex flex-col items-center justify-around'>
-          <h1 className='text-typoLight-400 dark:text-typoDark-200 font-extrabold text-3xl relative z-50 shadow-[0px-4px-10px-rgba(0,0,0,0.08)]'>
+          <h1 className='text-typoLight-400 dark:text-typoDark-200 font-extrabold text-3xl relative z-40 shadow-[0px-4px-10px-rgba(0,0,0,0.08)]'>
             powerful digital agency
             <svg
               className='absolute top-14 -left-2'
@@ -32,19 +32,21 @@ const MobileHero = () => {
               Talentnetwork
             </span>
           </h2>
-          <PrimaryBtn text='Get Started' />
+          <button className='bg-primary-400 dark:bg-primary-50 rounded-lg w-44 md:w-32 h-16 text-typoDark-200 dark:text-typoLight-600 shadow-[1px_4px_16px_rgba(118,71,235,0.2)] dark:shadow-[2px_4px_16px_rgba(195,197,248,0.3)] leading-7 text-lg font-medium z-40 shadow-[1px-2px-10px-rgba(195,197,248,0.5)]'>
+            Get Started
+          </button>
         </div>
-        <div className='flex justify-center items-center z-50 mt-10'>
+        <div className='flex justify-center items-center z-40 mt-10'>
           <img src='/images/Group 4.svg' alt='' />
         </div>
       </div>
       <Image
-        className='absolute left-0 top-[170px] z-0'
+        className=' z-0'
         src={"/images/vecteezy_abstract-wavy-stri 2.svg"}
         fill
       />
-      <div className='absolute left-[170px] top-[273px] bg-[#FFC56F] blur-[50px] opacity-40 w-[400px] h-[400px]'></div>
-      <div className='absolute left-[48px] top-[-67px] bg-[#C3C5F8] blur-[50px] opacity-40 w-[300px] h-[300px]'></div>
+      <div className='absolute left-[170px] top-[273px] bg-[#FFC56F] blur-[50px] opacity-25 w-[400px] h-[400px] z-0'></div>
+      <div className='absolute left-[48px] top-[-67px] bg-[#C3C5F8] blur-[50px] opacity-20 w-[300px] h-[300px] z-0'></div>
       {/*  */}
       <svg
         className='absolute left-28 top-56'

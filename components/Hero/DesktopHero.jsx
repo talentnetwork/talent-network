@@ -46,8 +46,8 @@ const DesktopHero = () => {
         width={1900}
         height={10}
       />
-      <div className='absolute right-0 top-52 bg-[#FFC56F] blur-[140px] opacity-30 w-[800px] h-[800px]'></div>
-      <div className='absolute left-1/3 top-[-297px] bg-[#888CF1] blur-[160px] opacity-10 w-[800px] h-[800px]'></div>
+      <div className='absolute right-0 top-52 bg-[#FFC56F] blur-[140px] opacity-30 w-[800px] h-[800px] z-auto'></div>
+      <div className='absolute left-1/3 top-[-297px] bg-[#888CF1] blur-[160px] opacity-10 w-[800px] h-[800px] z-auto'></div>
       {/*  */}
       <svg
         className='absolute left-28 top-56'

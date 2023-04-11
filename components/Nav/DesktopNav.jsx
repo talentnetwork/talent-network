@@ -5,9 +5,14 @@ import DarkModeButton from "../utils/DarkBtn";
 
 const DesktopNav = () => {
   return (
-    <div className='flex justify-between items-center w-full'>
+    <div className='flex justify-between items-center w-full z-50'>
       <div>
-        <Image alt="logo-header" src='/images/logo-header 1.svg' width={100} height={100} />
+        <Image
+          alt='logo-header'
+          src='/images/logo-header 1.svg'
+          width={100}
+          height={100}
+        />
       </div>
       <div className='flex justify-center items-center'>
         {["home", "our team", "services"].map((name, index) => (
