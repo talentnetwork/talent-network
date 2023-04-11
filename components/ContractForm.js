@@ -17,7 +17,7 @@ const ContractForm = () => {
       setHide(false);
       resetForm();
     } catch (error) {
-      console.log(error);
+     
     }
   };
 

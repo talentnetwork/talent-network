@@ -39,7 +39,7 @@ function WorkSamples({workSamples}){
         return <></>
     }
 
-    console.log(workSamples.content)
+   
     return (<div data="work-samples" className="w-full py-12 container ">
 
         <header className="flex" onClick={()=>clickable()}>
