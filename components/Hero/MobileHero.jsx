@@ -44,6 +44,7 @@ const MobileHero = () => {
         className=' z-0'
         src={"/images/vecteezy_abstract-wavy-stri 2.svg"}
         fill
+        alt=""
       />
       {/* <div className='absolute left-[170px] top-[273px] bg-[#FFC56F] blur-[50px] opacity-25 w-[400px] h-[400px] z-0'></div>
       <div className='absolute left-[48px] top-[-67px] bg-[#C3C5F8] blur-[50px] opacity-20 w-[300px] h-[300px] z-0'></div> */}

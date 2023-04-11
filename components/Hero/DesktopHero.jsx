@@ -20,7 +20,7 @@ const DesktopHero = () => {
               <path
                 d='M843 48.75C789.167 31.5833 744.5 24.25 622.5 12.25C470 -2.75 112.5 -2.75 1 12.25'
                 stroke='#C3C5F8'
-                stroke-width='2'
+                strokeWidth='2'
               />
             </svg>
           </h1>
@@ -45,6 +45,7 @@ const DesktopHero = () => {
         src={"/images/vecteezy_abstract-wavy-stri 2.svg"}
         width={1900}
         height={10}
+        alt=""
       />
       <div className='absolute right-0 top-52 bg-[#FFC56F] blur-[140px] opacity-30 w-[800px] h-[800px] z-auto'></div>
       <div className='absolute left-1/3 top-[-297px] bg-[#888CF1] blur-[160px] opacity-10 w-[800px] h-[800px] z-auto'></div>
