@@ -58,7 +58,7 @@ const MobileHero = () => {
       >
         <rect
           y='16.2669'
-          width='21'
+          width='20'
           height='9.88235'
           transform='rotate(-48 0 16.2669)'
           fill='#4C52EA'
