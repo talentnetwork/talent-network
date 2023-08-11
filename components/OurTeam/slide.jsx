@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Slide({ person }) {
@@ -23,17 +24,17 @@ export default function Slide({ person }) {
               {person.attributes.job || "Developer"}
             </p>
             <div className="flex text-center justify-center justify-items-center gap-3">
-              <a href={`mailto:${person.attributes.email}`}>
+              <Link href={`mailto:${person.attributes.email}`}>
                 <div className="w-6 lg:w-7 h-6 lg:h-7 relative">
                   <i className="icon-message leading-6 lg:leading-7 w-full h-full text-center block text-2xl text-typoLight-200 dark:text-typoDark-400 hover:text-primary-400 transition"></i>
                 </div>
-              </a>
-              <a href={person.attributes.github}>
+              </Link>
+              <Link href={person.attributes.github}>
                 <div className="w-6 lg:w-7 h-6 lg:h-7 relative">
                   <i className="icon-github leading-6 lg:leading-7 w-full h-full text-center block text-2xl text-typoLight-200 dark:text-typoDark-400 hover:text-primary-400 transition"></i>
                 </div>
-              </a>
-              <a href={person.attributes.linkedin}>
+              </Link>
+              <a href={person.attributes.linkedin} passHref={true}>
                 <div className="w-6 lg:w-7 h-6 lg:h-7 relative">
                   <i className="icon-linkedin leading-6 lg:leading-7 w-full h-full text-center block text-2xl text-typoLight-200 dark:text-typoDark-400 hover:text-primary-400 transition"></i>
                 </div>
