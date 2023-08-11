@@ -19,12 +19,12 @@ export async function getServerSideProps() {
     const ourTeam = await response.json();
    
      
-    // const worksResponse = await fetch(
-    //   "https://api.talentnetwork.ir/api/work_sample"
-    // );
-    // const workSamples = await worksResponse.json();
+    const worksResponse = await fetch(
+      "http://localhost:1337/api/works"
+    );
+    const workSamples = await worksResponse.json();
 
-    return { props: {ourTeam} };
+    return { props: {ourTeam,workSamples} };
   } catch (e) {
     return { props: {} };
   }
@@ -35,14 +35,14 @@ const info={
   dis:"fghdhgfh"
 }
 
-export default function Home({ ourTeam }) {
+export default function Home({ ourTeam,workSamples }) {
 
   return (
     <div className={`${popnis.className} dark:bg-bgDark-400 `}>
       <Hero />
       <div className='container  mx-auto'>
         <OurTeam ourTeam={ourTeam} />
-        {/* <WorkSamples workSamples={workSamples} /> */}
+        <WorkSamples workSamples={workSamples} />
         <Services />
         <OurServices info={info}/>
         <ContractForm />

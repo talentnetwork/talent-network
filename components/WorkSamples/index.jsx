@@ -14,7 +14,7 @@ function WorkSamples({workSamples}){
 
     const [selectedIndex,setSelectedIndex] = useState(0);
     const [swiper,setSwiper] = useState(null);
-
+    
 
     const nextBtn = useRef(null);
     const prevBtn = useRef(null);
@@ -35,24 +35,27 @@ function WorkSamples({workSamples}){
 
     
 
-    if(!workSamples || !workSamples.content){
+    if(!workSamples || !workSamples.data){
         return <></>
     }
-
+    
    
     return (<div data="work-samples" className="w-full py-12 container ">
-
+       
         <header className="flex" onClick={()=>clickable()}>
             <Title>Work Samples</Title>
         </header>
         <main className="work-samples ">
             <div data="data work info" className="flex mt-[65px] mb-8 lg:mb-5">
                 <h3 className="h-8  relative before:absolute before:left-0 before:content-normal before:top-5 before:z-0 before:h-2 before:w-full  before:bg-secondary-200">
-                    <span className="z-10 relative leading-8 font-[800] text-2xl">{workSamples.content[selectedIndex].title}</span>
+                    <span className="z-10 relative leading-8 font-[800] text-2xl">{workSamples.data[selectedIndex].attributes.title}</span>
                 </h3>
-            </div>                  
-            <Intro title={'about'} text={workSamples.content[selectedIndex].about} />
-            <Intro title={'tecnology'} text={workSamples.content[selectedIndex].technology} />
+            </div>    
+            {
+                console.log(workSamples.data[selectedIndex].attributes.about)
+            }              
+            <Intro title={'about'} text={workSamples.data[selectedIndex].attributes.about} />
+            <Intro title={'tecnology'} text={workSamples.data[selectedIndex].attributes.technology} />
             <div className="position-relative pb-8 mt-[64px] h-[30vw]">
                 <div className="w-full h-full inline ">
                     <Swiper
@@ -79,11 +82,12 @@ function WorkSamples({workSamples}){
                     onInit={swiper=>setSwiper(swiper)}
                     onSwiper={swiper=>setSwiper(swiper)}
                     >
-                        {workSamples.content.map((work,index)=>{
+                        {workSamples.data.map((work,index)=>{
+                           
                             return (<SwiperSlide key={index}>
                                 <div className="w-full p-3 cursor-pointer flex" onClick={()=>{}}>
                                     <div className="relative pt-[50%] w-full shadow-[2px_6px_12px_rgba(0,0,0,0.16)] rounded-lg overflow-hidden align-middle">
-                                        <Image src={work.work_img!=='img'?work.work_img[0]:'/images/default-work-samples.png'} alt={work.title} fill />
+                                        <Image src={work.attributes.work_img} alt={work.title} fill />
                                     </div>
                                 </div>
                             </SwiperSlide>);
@@ -99,7 +103,7 @@ function WorkSamples({workSamples}){
                         
                     <button onClick={()=>goToPrevSlide()} className=" w-7 md:w-10 h-7 md:h-10 "><div className="relative w-full h-full"><i className="icon-slider-prev text-4xl"></i></div></button>
                     <ul className="flex gap-2  transition-[3s_all] h-7 md:h-10 items-center">
-                        {workSamples.content.map((work,index)=>{
+                        {workSamples.data.map((work,index)=>{
                             return (<li 
                                 key={index} 
                                 onClick={ ()=>goSlide(index) }
