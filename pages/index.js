@@ -15,15 +15,16 @@ export const popnis = Poppins({
 
 export async function getServerSideProps() {
   try {
-    const response = await fetch("https://api.talentnetwork.ir/api/our_team");
+    const response = await fetch("http://localhost:1337/api/teams");
     const ourTeam = await response.json();
+   
+     
+    // const worksResponse = await fetch(
+    //   "https://api.talentnetwork.ir/api/work_sample"
+    // );
+    // const workSamples = await worksResponse.json();
 
-    const worksResponse = await fetch(
-      "https://api.talentnetwork.ir/api/work_sample"
-    );
-    const workSamples = await worksResponse.json();
-
-    return { props: { ourTeam, workSamples } };
+    return { props: {ourTeam} };
   } catch (e) {
     return { props: {} };
   }
@@ -34,13 +35,14 @@ const info={
   dis:"fghdhgfh"
 }
 
-export default function Home({ ourTeam, workSamples }) {
+export default function Home({ ourTeam }) {
+
   return (
     <div className={`${popnis.className} dark:bg-bgDark-400 `}>
       <Hero />
       <div className='container  mx-auto'>
         <OurTeam ourTeam={ourTeam} />
-        <WorkSamples workSamples={workSamples} />
+        {/* <WorkSamples workSamples={workSamples} /> */}
         <Services />
         <OurServices info={info}/>
         <ContractForm />

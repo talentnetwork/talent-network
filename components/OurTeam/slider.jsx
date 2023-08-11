@@ -6,10 +6,26 @@ import '@abasb75/swiperjs/css';
 import { Navigation  } from '@abasb75/swiperjs';
 import Slide from "./slide";
 import Title from "../general/title";
-
+ const team=[
+    {
+        id: 1,
+        member_name: "faeze sadat",
+        member_last_name: "fathi",
+        job: "ui/ux designer",
+        img_url: "",
+        linkedin: "https://www.linkedin.com/in/faeze-fathi-6baaaa261",
+        github: "https://dribbble.com/faezef\r\n",
+        email: "Faezehff2001@gmail.com",
+        created_at: null,
+        updated_at: null
+      }
+  
+    
+ ]
 
 function Slider({ourTeam}){
-    if(!ourTeam || !ourTeam.content){
+   
+    if(!ourTeam || !ourTeam.data){
         return <></>
     }else{
         return (<div data="slider" className="w-full mx-auto teams-slider  ">
@@ -36,7 +52,7 @@ function Slider({ourTeam}){
                                             nextEl: ".team-slider-next",
                                         }}
                                         >
-                                        {ourTeam.content.map((person,index)=><SwiperSlide key={index}><Slide person={person} className="w-[18.14%] h-full" /></SwiperSlide>)}
+                                        {ourTeam.data.map((person,index)=><SwiperSlide key={index}><Slide person={person} className="w-[18.14%] h-full" /></SwiperSlide>)}
                                         
                                     </Swiper>
                                 </div>
