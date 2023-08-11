@@ -3,18 +3,18 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ["api.talentnetwork.ir"],
+    domains: ['localhost'],
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "api.talentnetwork.ir",
-        port: "",
-        pathname: "/assets/imgs/**",
-      },
-    ],
-  },
+  // images: {
+  // //   remotePatterns: [
+  // //     {
+  // //       protocol: "https",
+  // //       hostname: "http://localhost",
+  // //       port: "",
+  // //       pathname: "/uploads/**",
+  // //     },
+  // //   ],
+  // // },
 };
 
 
