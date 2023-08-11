@@ -35,9 +35,9 @@ const DesktopHero = () => {
           <PrimaryBtn text='Get Started' />
         </div>
         <div className='flex justify-between z-50'>
-          <img src='/images/Group 4.svg' alt='' />
-          <img src='/images/Group 2.svg' className='mt-40' alt='' />
-          <img src='/images/Group 1.svg' alt='' />
+          <Image src={'/images/Group 4.svg'} width={300} height={300} alt='' />
+          <Image src={'/images/Group 2.svg'} width={300} height={300} className='mt-40' alt='' />
+          <Image src={'/images/Group 1.svg'} width={300} height={300} alt='' />
         </div>
       </div>
       <Image
@@ -109,35 +109,8 @@ const DesktopHero = () => {
           fill='#4C52EA'
         />
       </svg>
-      <svg
-        className='absolute left-[69px] top-[870px]'
-        width='23'
-        height='14'
-        viewBox='0 0 23 14'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <rect
-          y='3.90405'
-          width='21'
-          height='9.88235'
-          transform='rotate(-10 0 3.90405)'
-          fill='#FFC56F'
-        />
-      </svg>
-      <svg
-        className='absolute right-[120px] top-[840px]'
-        width='26'
-        height='24'
-        viewBox='0 0 26 24'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <path
-          d='M16.0776 23.6093L0.61546 3.81858L25.4858 0.32328L16.0776 23.6093Z'
-          fill='#4C52EA'
-        />
-      </svg>
+      
+     
     </>
   );
 };

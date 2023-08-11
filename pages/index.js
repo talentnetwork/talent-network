@@ -28,6 +28,11 @@ export async function getServerSideProps() {
     return { props: {} };
   }
 }
+const info={
+  flag:'dd',
+  title:"aa",
+  dis:"fghdhgfh"
+}
 
 export default function Home({ ourTeam, workSamples }) {
   return (
@@ -37,6 +42,7 @@ export default function Home({ ourTeam, workSamples }) {
         <OurTeam ourTeam={ourTeam} />
         <WorkSamples workSamples={workSamples} />
         <Services />
+        <OurServices info={info}/>
         <ContractForm />
       </div>
     </div>
