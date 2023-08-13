@@ -45,7 +45,7 @@ const Services = () => {
               We are here to provide services in the field of website design such as: front-end development, back-end development and user interface design. The Talent Network team from zero to one hundred sets up dedicated sites with laravel, nextjs, and reactjs technologies with a dedicated user interface design. Click for more information.
               </p>
               <span className="bg-primary-400 text-white p-2   rounded dark:bg-primary-50 dark:text-black dark:shadow-[2px_4px_16px_rgba(195,197,248,0.3)]">
-              View portfolio
+              View Portfolio
               </span>
         </div>
         <div className='mt-16 md:mt-10 col-span-4 md:ml-16'>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 export default function Slide({ person }) {
- console.log(person);
+
   return (
     <div
       data="slider slide"
@@ -14,7 +14,7 @@ export default function Slide({ person }) {
           <div className="w-full ">
             <div className="w-[100px] lg:w-[140px] h-[100px] lg:h-[140px] bg-secondary-600 rounded-full mx-auto relative overflow-hidden">
               <Image
-                src={person.img_url || "/images/default-user.png"}
+                src={person.attributes.img_url || "/images/default-user.png"}
                 alt={`${person.attributes.member_name} ${person.attributes.member_last_name}`}
                 fill
               />

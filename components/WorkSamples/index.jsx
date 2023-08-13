@@ -51,9 +51,7 @@ function WorkSamples({workSamples}){
                     <span className="z-10 relative leading-8 font-[800] text-2xl">{workSamples.data[selectedIndex].attributes.title}</span>
                 </h3>
             </div>    
-            {
-                console.log(workSamples.data[selectedIndex].attributes.about)
-            }              
+                        
             <Intro title={'about'} text={workSamples.data[selectedIndex].attributes.about} />
             <Intro title={'tecnology'} text={workSamples.data[selectedIndex].attributes.technology} />
             <div className="position-relative pb-8 mt-[64px] h-[30vw]">
