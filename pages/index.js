@@ -44,7 +44,7 @@ export default function Home({ ourTeam,workSamples }) {
         <OurTeam ourTeam={ourTeam} />
         <WorkSamples workSamples={workSamples} />
         <Services />
-        <OurServices info={info}/>
+    
         <ContractForm />
       </div>
     </div>

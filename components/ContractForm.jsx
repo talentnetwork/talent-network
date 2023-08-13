@@ -12,12 +12,13 @@ const ContractForm = () => {
     setHide(true)
   }
   const onSubmit = async (values, { resetForm }) => {
+    const data=values;
     try {
-      await axios.post("https://api.talentnetwork.ir/api/project", values);
+
       setHide(false);
       resetForm();
     } catch (error) {
-     
+      console.log(error);
     }
   };
 
