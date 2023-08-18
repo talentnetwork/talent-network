@@ -37,7 +37,7 @@ const MobileHero = () => {
           </button>
         </div>
         <div className='flex justify-center items-center z-40 mt-10'>
-          <img src='/images/Group 4.svg' alt='' />
+          <Image src='/images/Group 4.svg' width={180} height={180} alt='Group' />
         </div>
       </div>
       <Image

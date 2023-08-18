@@ -9,8 +9,10 @@ import '@abasb75/swiperjs/css/pagination'
 import Title from "../general/title";
 import Intro from "./intro";
 import { useRef, useState } from "react";
+import Link from "next/link";
+import { workSamples } from "../OurTeam/ourteam";
 
-function WorkSamples({workSamples}){
+function WorkSamples(){
 
     const [selectedIndex,setSelectedIndex] = useState(0);
     const [swiper,setSwiper] = useState(null);
@@ -48,12 +50,12 @@ function WorkSamples({workSamples}){
         <main className="work-samples ">
             <div data="data work info" className="flex mt-[65px] mb-8 lg:mb-5">
                 <h3 className="h-8  relative before:absolute before:left-0 before:content-normal before:top-5 before:z-0 before:h-2 before:w-full  before:bg-secondary-200">
-                    <span className="z-10 relative leading-8 font-[800] text-2xl">{workSamples.data[selectedIndex].attributes.title}</span>
+                    <Link href={workSamples.data[selectedIndex].url} className="z-10 relative leading-8 font-[800] text-2xl">{workSamples.data[selectedIndex].title}</Link>
                 </h3>
             </div>    
                         
-            <Intro title={'about'} text={workSamples.data[selectedIndex].attributes.about} />
-            <Intro title={'tecnology'} text={workSamples.data[selectedIndex].attributes.technology} />
+            <Intro title={'about'} text={workSamples.data[selectedIndex].about} />
+            <Intro title={'tecnology'} text={workSamples.data[selectedIndex].technology} />
             <div className="position-relative pb-8 mt-[64px] h-[30vw]">
                 <div className="w-full h-full inline ">
                     <Swiper
@@ -85,7 +87,7 @@ function WorkSamples({workSamples}){
                             return (<SwiperSlide key={index}>
                                 <div className="w-full p-3 cursor-pointer flex" onClick={()=>{}}>
                                     <div className="relative pt-[50%] w-full shadow-[2px_6px_12px_rgba(0,0,0,0.16)] rounded-lg overflow-hidden align-middle">
-                                        <Image src={work.attributes.work_img} alt={work.title} fill />
+                                        <Image src={work.work_img} alt={work.title} fill />
                                     </div>
                                 </div>
                             </SwiperSlide>);

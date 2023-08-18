@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Slider from "./slider";
 
-export default function OurTeam({ ourTeam }) {
+export default function OurTeam() {
   return (
     <div
       id='our team'
@@ -31,7 +31,7 @@ export default function OurTeam({ ourTeam }) {
         data='slider-container'
         className='w-full py-[59px] xl:py-12 px-2 md:px-5 lg:p-0 '
       >
-        <Slider ourTeam={ourTeam} />
+        <Slider  />
       </div>
     </div>
   );
