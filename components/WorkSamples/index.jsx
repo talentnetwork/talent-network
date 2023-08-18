@@ -45,7 +45,7 @@ function WorkSamples(){
     return (<div data="work-samples" className="w-full py-12 container ">
        
         <header className="flex" onClick={()=>clickable()}>
-            <Title>Work Samples</Title>
+            <Title>Work Sample</Title>
         </header>
         <main className="work-samples ">
             <div data="data work info" className="flex mt-[65px] mb-8 lg:mb-5">
@@ -60,7 +60,7 @@ function WorkSamples(){
                 <div className="w-full h-full inline ">
                     <Swiper
                     
-                    modules={[Navigation]}
+                    modules={[Navigation]} 
                     spaceBetween={0}
                     slidesPerView={1}
                     activeLastSlideClass={false}
